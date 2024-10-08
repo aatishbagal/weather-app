@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+</head>
+<script src="script.js" defer></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<body>
+    <div class="container">
+        <div class="weather">
+            <div class="weather-gradient"></div>
+            <div class="date-container">
+                <h2 class="date-day">--</h2>
+                <span class="date-date">--</span>
+                <!-- <span class="material-symbols-outlined">
+                    location_on
+                </span> -->
+                <div class="location-container">
+                    <i class="location-icon" data-feather="map-pin"></i>
+                    <span class="location">Enter City</span>
+                </div>
+            </div>
+            <div class="weather-container">
+                <span ID="weather-icon" class="material-symbols-outlined">search</span>
+                <h1 class="weather-temp">--°C</h1>
+                <h3 class="weather-desc">--</h3>
+            </div>
+        </div>
+            <div class="info">
+                <div class="search-location">
+                    <input id="Location" type="text" class="searchbar" placeholder="Search City" tabindex="0">
+                    <button class="search-btn" tabindex="1">
+                        <i class="search-icon" data-feather="search"></i>
+                    </button>
+                </div>
+                <div class="today-info-container">
+                    <div class="today-info">
+                        <div class="precipitation">
+                            <span class="title">Feels Like</span>
+                            <span class="value" id="feels-like">-°C</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="humidity">
+                            <span class="title">Humidity</span>
+                            <span class="value" id="humidity">-%</span>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="wind">
+                            <span class="title">Wind</span>
+                            <span class="value" id="wind">-m/s</span>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="week-container">
+                    <div class="week-list">
+                        <div class="active">
+                            <i class="day-icon" data-feather="sun"></i>
+                            <span class="day-name">30 Sept</span>
+                            <span class="day-temp">29°C</span>
+                        </div>
+                        <div>
+                            <i class="day-icon" data-feather="cloud"></i>
+                            <span class="day-name">1 Oct</span>
+                            <span class="day-temp">21°C</span>
+                        </li>
+                        <div>
+                            <i class="day-icon" data-feather="cloud-snow"></i>
+                            <span class="day-name">2 Oct</span>
+                            <span class="day-temp">08°C</span>
+                        </li>
+                        <div>
+                            <i class="day-icon" data-feather="cloud-rain"></i>
+                            <span class="day-name">30 Sept</span>
+                            <span class="day-temp">19°C</span>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="forecast-item-container">
+                    <div class="forecast-item">
+                        <span ID="weather-icon" class="week-forecast-icon">sunny</span>
+                        <h5 class="forecast-item-date">-- Month</h5>
+                        <h5 class="forecast-item-temp">--°C</h5>
+                    </div>
+                    <div class="forecast-item">
+                        <span ID="weather-icon" class="week-forecast-icon">sunny</span>
+                        <h5 class="forecast-item-date">-- Month</h5>
+                        <h5 class="forecast-item-temp">--°C</h5>
+                    </div>
+                    <div class="forecast-item">
+                        <span ID="weather-icon" class="week-forecast-icon">sunny</span>
+                        <h5 class="forecast-item-date">-- Month</h5>
+                        <h5 class="forecast-item-temp">--°C</h5>
+                    </div>
+                    <div class="forecast-item">
+                        <span ID="weather-icon" class="week-forecast-icon">sunny</span>
+                        <h5 class="forecast-item-date">-- Month</h5>
+                        <h5 class="forecast-item-temp">--°C</h5>
+                    </div>
+                    <div class="forecast-item">
+                        <span ID="weather-icon" class="week-forecast-icon">sunny</span>
+                        <h5 class="forecast-item-date">-- Month</h5>
+                        <h5 class="forecast-item-temp">--°C</h5>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
