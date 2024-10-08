@@ -1,2 +1,4 @@
 # weather-app
- FY-GDSC-Project
+ First Year Pre-Interview task for GDSC-VIT-PUNE
+
+ # https://weather-app.aatish.net/
